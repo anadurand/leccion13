@@ -7,6 +7,45 @@
   <title>Document</title>
 </head>
 <body>
+<h1>Formulario de Datos</h1>
+<section>
+  <form action="" onsubmit="return validacion()">
+    <div>
+      <label for="nombre">Nombre:</label><br>
+      <input id="nombre" type="text" required>
+    </div><br>
+    <div>
+      <label for="apellido">Apellido:</label><br>
+      <input id="apellido" type="text" required>
+    </div><br>
+    <div>
+      <label for="telef">Telefono:</label><br>
+      <input id="telef" type="text" pattern="\d{9}$" required>
+    </div><br>
+    <div>
+      Escoge tu carro para continuar
+      <br><br>
+      <select required>
+        <option value="">escoge tu carro</option>
+        <option value="1">Volvo</option>
+        <option value="2">Mercedes</option>
+        <option value="3">Audi</option>
+        <option value="4">Saab</option>
+      </select>
+    </div><br><br><br>
+    <div>
+      <label for="email">Email:</label><br>
+      <input id="email" type="email" required>
+    </div><br>
+    <div>
+      <label for="password">Crea tu contraseña:</label><br>
+      <input id="password" type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])\w\S{6,}" required>
+    </div><br>
+    <button type="submit">Send</button>
+  </form>
+</section>
+<script src="asset/js/javascript.js">
 
+</script>
 </body>
 </html>
