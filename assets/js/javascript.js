@@ -1,8 +1,4 @@
 
-
-function validacion(){
-  valor = document.getElementById("nombre").value;
-  if(isNaN(valor)) {
-    return false;
-  }
+function validar() {
+  document.write("<h1 text-align:center>Buena Validaciòn HTML</h1>");
 }
